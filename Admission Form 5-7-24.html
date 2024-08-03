@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+ <style>
+    body{
+        background-color: aquamarine;
+    
+    
+    }
+    nav{
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-weight: bolder;
+        padding: 1px;
+        font-size: 25px;
+        border-radius: 10px;
+    }
+    p
+    { 
+ text-align: center;
+ padding: 10px;
+ font-weight: bold;
+
+    }
+    input[type="submit"]
+    {
+    
+        font-weight: bold;
+        font-size: 22px;
+        border-radius: 5px;
+        
+    }
+    input[type="submit"]:hover
+{
+    background-color: black;
+    color: white;
+}
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 430px;
+}
+ </style>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+
+<body>
+    <form>
+    <div class="container">
+        <div class="login form">
+    <nav><h1>Admission Form</h1></nav>
+    <p>Student Name : <input type="text" placeholder="Enter your name"> </p>
+    <p>Father Name : <input type="text" placeholder="Enter your F.Name"></p>
+    <p>Date of Birth : <input type="date" placeholder="Enter your DOB"></p>
+    <p>CNIC : <input type="number" placeholder="Enter your CNIC"></p>
+    <p>Gardian : 
+    <select name="Gardian" id="gardian">
+        <option value="---Select Your Gardian---">---Select Your Gardian---</option>
+    <option value="Mother">Mother</option>
+    <option value="Father">Father</option>
+    <option value="Brother">Brother</option> </select> </p>
+    <p>Gender : 
+        <input type="radio" name="gender"> Male <input type="radio" name="gender">Female <input type="radio" name="gender">Other </p>
+        <p>First year marks : <input type="number" placeholder="11th marks"></p>
+        <p><input type="submit"value="Submit"></p>
+
+    </form>
+ 
+</body>
+</html>

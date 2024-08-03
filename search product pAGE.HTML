@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Search Page</title>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#search-bar {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+#search-button:hover {
+    background-color: #0056b3;
+}
+
+.results-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 15px;
+    text-align: center;
+    width: 200px;
+}
+
+.product-card img {
+    height: 150px;
+    width: 200px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.product-card h2 {
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+.product-card p {
+    font-size: 16px;
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <h1>Product Search</h1>
+    </header>
+    <main>
+        <section class="search-container">
+            <input type="text" id="search-bar" placeholder="Search for products...">
+            <button id="search-button">Search</button>
+        </section>
+        <section class="results-container">
+            <div class="product-card">
+                <img src="img/2423.jpg" alt="Example Product">
+                <h2>Example Product</h2>
+                <p>$4009.99</p>
+            </div>
+            <div class="product-card">
+                <img src="img/2423.jpg" alt="Example Product">
+                <h2>Example Product</h2>
+                <p>$3009.99</p>
+            </div>
+            <div class="product-card">
+                <img src="img/5.jpg" alt="Example Product">
+                <h2>Example Product</h2>
+                <p>$39.99</p>
+            </div>
+            <div class="product-card">
+                <img src="img/2.jpg" alt="Example Product">
+                <h2>Example Product</h2>
+                <p>$19.99</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Product Search Page</p>
+    </footer>
+</body>
+</html>

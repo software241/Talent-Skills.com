@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        h1,h2,p
+        {
+            text-align: center;
+            padding: 1px;       
+        }
+        form{
+            
+            background-color: rgb(231, 244, 244);
+        }
+        input[type="submit"]:hover{
+            background-color: black;
+            color: white;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="date"],
+        input[type="number"],
+        input[type="submit"],
+        select
+        {
+            border-radius: 20px;
+            width: 20%;
+            text-align: center;
+        }
+
+
+
+
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Type 2-7-24</title>
+</head>
+<body>
+    <form>
+    <h1>Payment Form New</h1>
+    <h2>required field are followed:</h2>
+    <p>Name: <input type="text" placeholder="Please enter your name" required></p>
+    <p>Contact No. * : <input type="number" placeholder="Please enter your phone no." required></p>
+    <p>Gender * :  <input type="radio" name="gender" > male <input type="radio" name="gender">Female <input type="radio" name="gender">Other</p>
+    <p>Address <input type="text" placeholder="Please enter your address" required></p>
+    <p>Email <input type="email" name="email" id="email" placeholder="Please enter your email" required ></p>
+    <p>Password <input type="password" name="password" id="password" placeholder="Please enter your password"></p>
+    <h1>Payment Information Form</h1>
+    <p>Card type:
+    <select name="card type" id="card typr" required>
+     <option value="">--selaect a card type--</option>   
+    <option value=""visa> Visa</option>
+    <option value=""nayapay> nayapay</option>
+    <option value=""HBL> HBL</option>
+    <option value=""easy paisa >easy paisa</option>
+    </select>
+    <p>Card No : * <input type="text" placeholder="Please enter your card no." required></p>
+    <p>Card Exp Date: * <input type="date" name="" id="date" placeholder="Please enter card Exp date" required></p>
+    <p>CVV : * <input type="text" placeholder="Please enter your card cvv" required></p>
+    <h2><input style="width: 10%; padding: 8px; font-size: 22px; border-radius: 20px;"  type="submit" name="pay now"></h2>
+</form>
+</body>
+</html>
